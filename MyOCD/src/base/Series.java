@@ -18,6 +18,7 @@ public class Series {
 		String season = "06";
 		String episodesNamePath = pathName + "\\sepisodes.txt";
 		String resultNamePath = pathName + "\\result.txt";
+		System.out.println(resultNamePath);
 		
 		File episodesFile = new File(episodesNamePath);
 		File output = new File(resultNamePath);
