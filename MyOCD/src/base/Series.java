@@ -13,10 +13,10 @@ public class Series {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		String pathName = "G:\\TV Burning\\Game Of Thrones";
-		String seriesName = "Game Of Thrones";
-		String season = "06";
-		String episodesNamePath = pathName + "\\sepisodes.txt";
+		String pathName = "I:\\Tobeformalized\\Homeland";
+		String seriesName = "Homeland";
+		String season = "05";
+		String episodesNamePath = pathName + "\\episodes.txt";
 		String resultNamePath = pathName + "\\result.txt";
 		System.out.println(resultNamePath);
 		
@@ -27,10 +27,10 @@ public class Series {
 		while (episodesNameIter.hasNext()) {
 			String epiName = episodesNameIter.next().trim().replaceAll("\"", "");
 			if(epiNum < 10) {
-				Files.append(seriesName + " - S" + season + "E0" + epiNum + " - " + epiName + " 720p\n", output, Charsets.UTF_8);
+				Files.append(seriesName + " - S" + season + "E0" + epiNum + " - " + epiName + "\n", output, Charsets.UTF_8);
 			}
 			else if (epiNum < 20){
-				Files.append(seriesName + " - S" + season + "E" + epiNum + " - " + epiName + "720p\n", output, Charsets.UTF_8);
+				Files.append(seriesName + " - S" + season + "E" + epiNum + " - " + epiName + "\n", output, Charsets.UTF_8);
 			}
 			else {
 				Files.append(seriesName + " - S" + season + "E" + epiNum + " - " + epiName + "\n", output, Charsets.UTF_8);
