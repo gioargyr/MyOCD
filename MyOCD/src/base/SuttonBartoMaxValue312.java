@@ -16,7 +16,7 @@ public class SuttonBartoMaxValue312 {
 		}
 		
 		// Run the algorithm m times
-		int m = 30;
+		int m = 20;
 		for(int l = 1; l < m; l++) {
 			// Compute New Grid
 			for(int i = 0; i < 5; i++) {
